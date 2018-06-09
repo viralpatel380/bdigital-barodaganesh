@@ -1,0 +1,110 @@
+jQuery(document).on('ready', function ($) {
+    "use strict";
+    
+    /*--------------------------
+        SCROLLSPY ACTIVE
+    ---------------------------*/
+    $('body').scrollspy({
+        target: '.bs-example-js-navbar-scrollspy',
+        offset: 65
+    });
+    
+    /*---------------------------
+        SMOOTH SCROLL
+    -----------------------------*/
+    $('ul#nav li a[href^="#"], a.navbar-brand, a.scrolltotop').on('click', function (event) {
+        var id = $(this).attr("href");
+        var offset = 60;
+        var target = $(id).offset().top - offset;
+        $('html, body').animate({
+            scrollTop: target
+        }, 1500, "easeInOutExpo");
+        event.preventDefault();
+    });
+
+
+    /*----------------------------
+        MOBILE & DROPDOWN MENU
+    ------------------------------*/
+    jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 900
+    });
+
+
+    /*----------------------------
+        SCROLL TO TOP
+    ------------------------------*/
+    $(window).scroll(function () {
+        var $totalHeight = $(window).scrollTop();
+        var $scrollToTop = $(".scrolltotop");
+        if ($totalHeight > 300) {
+            $(".scrolltotop").fadeIn();
+        } else {
+            $(".scrolltotop").fadeOut();
+        }
+
+        if ($totalHeight + $(window).height() === $(document).height()) {
+            $scrollToTop.css("bottom", "90px");
+        } else {
+            $scrollToTop.css("bottom", "20px");
+        }
+    });
+
+    /*--------------------------
+       PARALLAX BACKGROUND
+    ----------------------------*/
+    $(window).stellar({
+        responsive: true,
+        positionProperty: 'position',
+        horizontalScrolling: false
+    });
+
+    // Target your .container, .wrapper, .post, etc.
+    $(".single-blog,video").fitVids();
+
+    /*-------------------------------
+        PRICE TABLE ACTIVE
+    ---------------------------------*/
+    $('.single-price,.download-button a,.download-content a').on('hover', function (e) {
+        $('.single-price,.download-button a,.download-content a').removeClass('active');
+        var $this = $(this);
+        if (!$this.hasClass('active')) {
+            $this.addClass('active');
+        }
+        e.preventDefault();
+    });
+
+
+    /*----------------------------
+        BLOG MASONRY
+    -----------------------------*/
+    var $container = $('.blog-masonry');
+    $container.imagesLoaded( function() {
+        $container.masonry();    
+    });
+
+
+    /*--------------------------
+        ACTIVE WOW JS
+    ----------------------------*/
+    new WOW().init();    
+    $('.single-blog table,.comments-area table').addClass('table-hover table table-bordered');
+    /*---------------------------
+        PLACEHOLDER ANIMATION
+    ----------------------------*/
+    Placeholdem(document.querySelectorAll('[placeholder]'));
+
+}(jQuery));
+
+
+
+(function($){
+    jQuery(window).on('load', function () {
+
+        /*--------------------------
+            PRE LOADER
+        ----------------------------*/
+        $(".preeloader").fadeOut(1000);
+    });
+})(jQuery)

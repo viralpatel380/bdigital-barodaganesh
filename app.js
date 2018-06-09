@@ -14,10 +14,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('bedigital');
   console.log("Server Started :: index");
 });
+
+app.get('/register', (req, res) => {
+    res.render('index');
+    console.log("Server Started :: index");
+  });
 // Mail Body
 app.post('/send', (req, res) => {
   const output = `

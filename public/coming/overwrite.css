@@ -1,0 +1,205 @@
+
+/* ----------------------------
+    KC OVERWRITE CSS
+---------------------------- */
+a.kc_button {
+    background: #8256ff none repeat scroll 0 0;
+    border: 2px solid #8256ff;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    margin-top:  30px;
+}
+a.kc_button:hover {
+    background: #ffffff none repeat scroll 0 0;
+    color: #8256ff;
+}
+.kc-pricing-tables .header-pricing .content-title,
+.kc-pricing-layout-1 .header-pricing .content-title,
+.kc-pricing-layout-2 .header-pricing .content-title,
+.kc-pricing-layout-3 .content-title,
+.kc-pricing-layout-4 .header-pricing .content-title
+ {
+    width: 100%;
+    text-align: center;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    text-transform: capitalize !important;
+    color: #8256ff !important;
+    padding: 60px 0 !important;
+    margin: 0 !important;
+}
+.kc-pricing-tables .header-pricing .kc-pricing-price span,
+.kc-pricing-layout-1 .header-pricing .kc-pricing-price span,
+.kc-pricing-layout-2 .header-pricing .kc-pricing-price span,
+.kc-pricing-layout-3 .kc-pricing-price span,
+.kc-pricing-layout-4 .header-pricing .kc-pricing-price span
+{
+  color: #8256ff !important;
+  font-size: 42px !important;
+  font-weight: 700 !important;
+  padding: 0;
+}
+.content-desc li {
+  background: transparent !important;
+  font-size: 16px !important;
+  color:inherit !important;
+}
+.kc-pricing-tables .header-pricing .kc-pricing-price span.content-currency,
+.kc-pricing-layout-1 .header-pricing .kc-pricing-price span.content-currency,
+.kc-pricing-layout-2 .header-pricing .kc-pricing-price span.content-currency,
+.kc-pricing-layout-3 .kc-pricing-price span.content-currency,
+.kc-pricing-layout-4 .header-pricing .kc-pricing-price span.content-currency
+ {
+    font-size: 24px !important;
+}
+.kc-pricing-tables .header-pricing .kc-pricing-price span.content-duration,
+.kc-pricing-layout-1 .header-pricing .kc-pricing-price span.content-duration,
+.kc-pricing-layout-2 .header-pricing .kc-pricing-price span.content-duration,
+.kc-pricing-layout-3 .kc-pricing-price span.content-duration,
+.kc-pricing-layout-4 .header-pricing .kc-pricing-price span.content-duration
+ {
+    color: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit!important;
+}
+
+.kc-pricing-tables .content-button,
+.kc-pricing-layout-1 .content-button,
+.kc-pricing-layout-2 .content-button,
+.kc-pricing-layout-3 .content-button,
+.kc-pricing-layout-4 .content-button
+{
+    padding: 50px 0;
+}
+.kc-pricing-tables .content-button a,
+.kc-pricing-layout-1 .content-button a,
+.kc-pricing-layout-2 .content-button a,
+.kc-pricing-layout-3 .content-button a,
+.kc-pricing-layout-4 .content-button a
+{
+    background: #8256ff !important;
+    border: 2px solid #8256ff !important;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+    margin: 0 !important;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.kc-pricing-tables .content-button a:hover,
+.kc-pricing-layout-1 .content-button a:hover,
+.kc-pricing-layout-2 .content-button a:hover,
+.kc-pricing-layout-3 .content-button a:hover,
+.kc-pricing-layout-4 .content-button a:hover
+ {
+    color: #8256ff !important;
+    background: #ffffff !important;
+}
+.kc-pricing-tables .content-button a:hover,
+.kc-pricing-layout-1 .content-button a:hover,
+.kc-pricing-layout-2 .content-button a:hover,
+.kc-pricing-layout-3 .content-button a:hover,
+.kc-pricing-layout-4 .content-button a:hover,
+{
+    background: #ffffff none repeat scroll 0 0;
+    color: #8256ff;
+}
+
+.content-icon-header {
+    display: none !important;
+    color: #8256ff !important;
+}
+.content-button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+}
+.content-title {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+}
+/* ----------------------------
+    KC TEAM MEMBERS
+------------------------------ */
+
+.kc-team.kc-team-1, 
+.kc-team.kc-team-2, 
+.kc-team.kc-team-3 {
+}
+.kc-team.kc-team-1 figure.content-image img {
+    background: #8256ff none repeat scroll 0 0;
+    border-radius: 50%;
+    padding: 3px;
+    width: 200px;
+    height: 200px;
+}
+.kc-team.kc-team-1 .content-title, 
+.kc-team.kc-team-2 .content-title, 
+.kc-team.kc-team-3 .content-title {
+    color: #586082;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.kc-team.kc-team-3 .content-title {
+    color: #ffffff;
+}
+
+.kc-team.kc-team-1 .content-subtitle {
+    margin-bottom: 20px;
+}
+.kc-team .content-socials a,
+.kc-team.kc-team-1 .content-socials a, 
+.kc-team.kc-team-2 .content-socials a, 
+.kc-team.kc-team-3 .content-socials a {
+    border-radius: 50%;
+    color: #404873;
+    background: transparent;
+    border: 1px solid;
+    font-size: 16px;
+}
+.kc-team .content-socials a:hover{
+    background: #8256ff;
+    color: #fff;
+    border-color: #8256ff;
+}
+/* -------------------------
+  KC COUNTER
+--------------------------- */
+.kc_counter_box i {
+  display: inline-block;
+  font-size: 36px !important;
+  font-weight: 500 !important;
+  margin-bottom: 20px !important;
+}
+.kc_counter_box .counterup {
+  display: block;
+  font-size: 36px !important;
+  font-weight: 500 !important;
+  line-height: 40px !important;
+  margin-bottom: 15px;
+}
+.kc_counter_box h4{
+    margin-bottom: 0 !important;
+}
+/* ---------------------------
+    KC MAP
+----------------------------- */
+.kc-google-maps iframe {
+  border: 0 none;
+}
+/* ----------------------------
+    KC CONTACT
+------------------------------ */
+.wpcf7-response-output {
+  overflow: hidden;
+}
+/*@media only screen and (max-width: 767px) {
+    .logged-in.admin-bar #wpadminbar {
+        margin-top: -46px;
+    }
+    .logged-in.admin-bar .is-sticky .mainmenu-area {
+        margin-top: -46px;
+    }
+} */
